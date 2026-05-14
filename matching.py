@@ -4,8 +4,8 @@ import re
 tree = ET.parse("modified_sms_v2.xml")
 root = tree.getroot()
 
-received_regex = re.compile(r'You have received (\d+) RWF', re.IGNORECASE)
-sent_regex = re.compile(r'Your payment of ([\d,]+) RWF', re.IGNORECASE)
+received_regex = re.compile(r'You have received (\d+) RWF')
+sent_regex = re.compile(r'Your payment of ([\d,]+) RWF')
 
 total_received = 0
 total_sent = 0
